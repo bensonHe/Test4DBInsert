@@ -44,7 +44,7 @@ public class C3P0Test {
 			// 从C3P0获取连接
 			con = cpds.getConnection();
 			NewProxyPreparedStatement prepare = (NewProxyPreparedStatement) con.prepareStatement(
-					"INSERT INTO `tbl_account_info` VALUES (?, '1000000', '充值中心', '12312312', '15018711111', 'hejinbin@qq.com', '1', 'hjb_recharge', 'yid:12312312', '1', '', '', '', '1399882974', '1429785062', '183.60.177.229', '1464658277', '14.29.83.74', '0', '0', '1', '0', '2', '1', '0', '1', '1', '1', '1', '1', '1', '1', '', '', '2000', '0', '0', '0', '2000', '6', '0', '0', '1', '0', '1456308697', '658', null, '广东广州', '0', '0', '0', '0', '20', null, null, '1', null, '');");
+					"INSERT INTO `tbl_account_info` VALUES (?, '1235500000', '何锦彬测试', '12312312', '15018711111', 'hejinbin@qq.com', '1', 'hjb_recharge', 'yid:12312312', '1', '', '', '', '1399882974', '1429785062', '183.60.177.229', '1464658277', '14.29.83.74', '0', '0', '1', '0', '2', '1', '0', '1', '1', '1', '1', '1', '1', '1', '', '', '2000', '0', '0', '0', '2000', '6', '0', '0', '1', '0', '1456308697', '658', null, '广东广州', '0', '0', '0', '0', '20', null, null, '1', null, '');");
 			prepare.setLong(1, id.incrementAndGet());
 			prepare.execute();
 		} catch (Exception e) {
